@@ -1,6 +1,5 @@
 import React from 'react'
-import { Box, Button, Heading } from 'grommet'
-import { Notification } from 'grommet-icons'
+import { Box, Heading } from 'grommet'
 
 const Navbar = (props: any) => (
   <Box
@@ -17,7 +16,6 @@ const Navbar = (props: any) => (
     <Heading level="3" margin="none">
       Items Gallery
     </Heading>
-    <Button icon={<Notification />} onClick={() => console.log('notifiactions now')} />
   </Box>
 )
 

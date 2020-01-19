@@ -11,3 +11,17 @@ export interface AnimalI {
     Thumb: string
   }
 }
+
+export interface FruitI {
+  Id: number
+  Title: string
+  Description: string
+  Family: string
+  Genus: string
+  Width: number
+  Height: number
+  ImageURLs: {
+    FullSize: string
+    Thumb: string
+  }
+}

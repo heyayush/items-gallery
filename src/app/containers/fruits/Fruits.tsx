@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { getFruitsList } from '../../services/fruits'
 import { Grid } from 'grommet'
 import Card from '../../components/card/Card'
+import { FruitI } from '../../types'
 
 const FruitsContainer = () => {
   const [fruitsData, setFruitsData] = useState()
@@ -11,7 +12,7 @@ const FruitsContainer = () => {
 
   return (
     <Grid className="grid-container">
-      {fruitsData && fruitsData.map((fruit: any) => <Card data={fruit} key={fruitsData.id} />)}
+      {fruitsData && fruitsData.map((fruit: FruitI) => <Card data={fruit} key={fruitsData.id} />)}
     </Grid>
   )
 }
