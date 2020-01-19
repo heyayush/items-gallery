@@ -15,7 +15,7 @@ const App: React.FC = () => {
           <Navbar></Navbar>
           <Box direction="row" flex>
             <Sidebar />
-            <Box flex align="center" justify="center">
+            <Box flex margin="medium">
               <Gallery />
             </Box>
           </Box>

@@ -2,6 +2,7 @@ import React from 'react'
 import { Switch, Route, Redirect } from 'react-router-dom'
 import AnimalsContainer from '../animals/Animals'
 import FruitsContainer from '../fruits/Fruits'
+import '../../../styles/grid.scss'
 
 const Gallery = () => {
   return (
