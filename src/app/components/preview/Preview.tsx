@@ -1,11 +1,19 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Box, Image, Heading, Paragraph } from 'grommet'
+import Loader from '../loader/Loader'
 
 const Preview = ({ data }: any) => {
+  const [loading, setLoading] = useState(true)
   return (
     <Box animation="zoomIn" direction="row">
       <Box>
-        <Image fit="cover" src={data.ImageURLs.FullSize} a11yTitle={data.Title}></Image>
+        {loading && <Loader />}
+        <Image
+          fit="cover"
+          src={data.ImageURLs.FullSize}
+          a11yTitle={data.Title}
+          onLoad={() => setLoading(false)}
+        ></Image>
       </Box>
       <Box pad="small" background="milkGlass">
         <Box>
