@@ -12,7 +12,7 @@ const Sidebar = () => {
     <ResponsiveContext.Consumer>
       {size => (
         <Collapsible direction="horizontal" open={size !== 'small'}>
-          <Box flex width="small" background="light-2" elevation="small" align="center">
+          <Box flex width="small" background="nordicBreeze" elevation="small" align="center">
             <Sidelist listData={sidebarList} />
           </Box>
         </Collapsible>

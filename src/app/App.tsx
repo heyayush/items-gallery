@@ -15,9 +15,7 @@ const App: React.FC = () => {
           <Navbar></Navbar>
           <Box direction="row" flex>
             <Sidebar />
-            <Box flex margin="medium">
-              <Gallery />
-            </Box>
+            <Gallery />
           </Box>
         </Box>
       </Router>

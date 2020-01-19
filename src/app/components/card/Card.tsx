@@ -19,7 +19,7 @@ const Card = ({ data }: any) => {
       >
         <Box className="card-head" direction="row-responsive">
           <Box className="thumb" height="xsmall" width="xsmall">
-            <Image fit="cover" src={data.ImageURLs.Thumb} alt={data.Title}></Image>
+            <Image fit="cover" src={data.ImageURLs.Thumb} a11yTitle={data.Title}></Image>
           </Box>
           <Box className="title" margin={{ left: 'small' }}>
             <Heading level={3}>{data.Title}</Heading>

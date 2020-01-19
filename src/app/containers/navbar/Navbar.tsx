@@ -7,7 +7,7 @@ const Navbar = (props: any) => (
     direction="row"
     align="center"
     justify="between"
-    background="brand"
+    background="marineBlue"
     pad={{ left: 'medium', right: 'small', vertical: 'small' }}
     elevation="medium"
     style={{ zIndex: 1 }}

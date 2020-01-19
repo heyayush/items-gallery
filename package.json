@@ -27,7 +27,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "yarn run lint-es && yarn run lint-css",
-    "lint-es": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "lint-es": "eslint src/ --ext .js,.jsx,.ts,.tsx",
     "lint-css": "stylelint \"src/**/*.scss\" \"src/**/*.html\"",
     "lint-css:fix": "stylelint \"src/**/*.scss\" \"src/**/*.html\" --fix",
     "pretty": "prettier --write \"src/**/*.ts\" \"src/**/*.tsx\" \"src/**/*.scss\" \"src/**/*.html\""

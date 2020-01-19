@@ -12,7 +12,7 @@ const FruitsContainer = () => {
 
   return (
     <Grid className="grid-container">
-      {fruitsData && fruitsData.map((fruit: FruitI) => <Card data={fruit} key={fruitsData.id} />)}
+      {fruitsData && fruitsData.map((fruit: FruitI) => <Card data={fruit} key={fruit.Id} />)}
     </Grid>
   )
 }

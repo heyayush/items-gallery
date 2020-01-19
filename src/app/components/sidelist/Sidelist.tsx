@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { List } from 'grommet'
+import { List, Heading } from 'grommet'
 import './sidelist.scss'
 import { Link } from 'react-router-dom'
 
@@ -17,10 +17,14 @@ const Sidelist = (props: any) => {
     <List
       className="sidebar-list"
       data={props.listData}
-      itemProps={selected >= 0 ? { [selected]: { background: 'accent-1' } } : undefined}
+      itemProps={selected >= 0 ? { [selected]: { background: 'brightCerulean' } } : undefined}
       onClickItem={onListItemClick}
     >
-      {(item: any) => <Link to={item.url}>{item.label}</Link>}
+      {(item: any) => (
+        <Link to={item.url}>
+          <Heading level={5}>{item.label}</Heading>
+        </Link>
+      )}
     </List>
   )
 }
