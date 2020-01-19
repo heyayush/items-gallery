@@ -1,0 +1,1 @@
+{"version":3,"sources":["card.scss"],"names":[],"mappings":"AAAA,sBAEI,+BAAgC","file":"4.e2c46b50.chunk.css","sourcesContent":[".card-container {\r\n  &:hover {\r\n    background: var(--nordic-breeze);\r\n  }\r\n}\r\n"]}
