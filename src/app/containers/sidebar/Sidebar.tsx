@@ -2,7 +2,10 @@ import React from 'react'
 import { Box, Collapsible, ResponsiveContext } from 'grommet'
 import Sidelist from '../../components/sidelist/Sidelist'
 
-const sidebarList = ['Animals', 'Fruits']
+const sidebarList = [
+  { label: 'Animals', url: '/animals' },
+  { label: 'Fruits', url: '/fruits' },
+]
 
 const Sidebar = () => {
   return (
